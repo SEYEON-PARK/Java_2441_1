@@ -12,21 +12,20 @@ import java.util.*; // 스캐너 사용을 위해서
 class Main{ // Main 클래스
     public static void main(String [] args){ // main 메소드
         Scanner s=new Scanner(System.in); // 스캐너 s 생성
-        int N, n;
-        N=s.nextInt();
-        n=N;
+        int N; // 변수 생성
+        N=s.nextInt(); // 사용자로부터 정수 입력받기
         
-        for(int i=N;i>0;i--){
-            for(int j=N-i;j>0;j--){
-                System.out.print(" ");
+        for(int i=N;i>0;i--){ // i가 N부터 0보다 클 때까지 1씩 감소하며 반복
+            for(int j=N-i;j>0;j--){ // j가 N-i부터 0보다 클 때까지 1씩 감소하며 반복
+                System.out.print(" "); // 공백 출력하기
             }
             
-            for(int k=i;k>0;k--){
-                System.out.print("*");
+            for(int k=i;k>0;k--){ 
+                System.out.print("*"); // 별 출력하기
             }
-            System.out.println();
+            System.out.println(); // 한 줄 띄기
         }
         
-        s.close();
+        s.close(); // 스캐너 s 종료하기
     }
 }
