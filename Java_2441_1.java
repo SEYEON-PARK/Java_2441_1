@@ -20,7 +20,7 @@ class Main{ // Main 클래스
                 System.out.print(" "); // 공백 출력하기
             }
             
-            for(int k=i;k>0;k--){ 
+            for(int k=i;k>0;k--){ // k가 i부터 0보다 클 때까지 1씩 감소하며 반복
                 System.out.print("*"); // 별 출력하기
             }
             System.out.println(); // 한 줄 띄기
